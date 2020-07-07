@@ -5,7 +5,8 @@
  The model code is a 1D coupled ice flow-debris cover model. It uses bedrock 
  geometry together with a parameterized mass balance profile to calculate the
  ice thickness evolution on a grid with spatial resolution dx for the Djankuat 
- Glacier, and also takes into account an evolving supraglacial debris cover. It is written in MATLAB_R2019a.
+ Glacier, and also takes into account an evolving supraglacial debris cover. It 
+ is written in MATLAB_R2019a.
 
  The main equation to be solved for the flow model is (Eq. 1 in Verhaegen et al., 2020) :
  
