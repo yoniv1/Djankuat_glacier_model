@@ -1,6 +1,6 @@
-# Djankuat_glacier_model
+### Djankuat_glacier_model
 
-# General information
+### General information
 
  The model code is a 1D coupled ice flow-debris cover model. It uses bedrock 
  geometry together with a parameterized mass balance profile to calculate the
@@ -39,7 +39,7 @@
 
  Constructed by Verhaegen et al. (2020), with supraglacial debris cover model adopted but sligthly adjusted from Anderson and Anderson (2016).
 
-# Model structure
+### Model structure
 
 The model structure consists of the following elemennts:
 
@@ -69,7 +69,7 @@ The model structure consists of the following elemennts:
  width, etc.) and supraglacial debris cover (mean thickness, thickness front, debris-
  covered area, etc).
 
-# Running and adjusting the model
+### Running and adjusting the model
 
  To run the model, unzip the data package and open the script MAIN.m to run the model code. 
 
@@ -99,7 +99,7 @@ The model structure consists of the following elemennts:
 
  * numberofyears (MAIN.m, number of years to be considered in the ice flow-debris model after initial steady state)
 
-# Model output
+### Model output
 
  The model output consists of the following elements:
 
@@ -119,13 +119,13 @@ The model structure consists of the following elemennts:
  * yearly_totalglacier_area_debris (yearly total glacier debris-covered surface area, km2)
  * yearly_totalglacier_fractarea_debris (yearly fractional glacier debris-covered surface area, -)
 
-# References
+### References
 
 Anderson, L. S. and Anderson, R. S.: Modeling debris-covered glaciers: response to steady debris deposition, The Cryosphere, 10, 1105–1124, https://doi.org/10.5194/tc-10-1105-2016, 2016.
 
 Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: Modelling the evolution of Djankuat Glacier, North Caucasus, from 1752 until 2100 AD, The Cryosphere Discuss., https://doi.org/10.5194/tc-2019-312, in review, 2020.
 
-# Citation
+### Citation
 
 Please cite the usage of the model as follows:
 
