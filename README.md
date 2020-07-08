@@ -80,7 +80,7 @@ The model structure consists of the following elemennts:
 
  * wbed_data (/loop_Flow_model_debrisfree/, bed width, Eq. 1)
  * mu_data (/loop_Flow_model_debrisfree/, valley angles, Eq. 1)
- * bed_data ((/loop_Flow_model_debrisfree/, bedrock elevation, Eq. 1)
+ * bed_data (/loop_Flow_model_debrisfree/, bedrock elevation, Eq. 1)
 
  b) variables related to the evolution of the supraglacial debris cover:
 
