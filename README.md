@@ -24,9 +24,9 @@
 
   And for supraglacial debris (Eq. 12, 13, 14, 15, 17 in Verhaegen et al., 2020) :
 
-    dH_d    C_d * (min(0,ba))     d(U_sfc * H_d)
-    ---- = ------------------- - --------------- + I_d
-     dt       (1-phi_d)(p_d)           dx
+    dH_d      C_d * (min(0,ba))     d(U_sfc * H_d)
+    ---- = - ------------------- - --------------- + I_d
+     dt         (1-phi_d)(p_d)           dx
 
     where:
     phi_d = debris cover porosity (-)
