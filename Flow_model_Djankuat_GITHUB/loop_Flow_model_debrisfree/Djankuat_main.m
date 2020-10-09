@@ -139,7 +139,7 @@ for j=1:jmax      % jmax
             
       % Length (m)
       
-      leng=(nnz(th))*deltax;
+      leng=(nnz(th)+1)*deltax;
       leng_index = leng_index + 1;
       leng_hist(leng_index) = leng;
       leng_time(leng_index) = j*deltat;
