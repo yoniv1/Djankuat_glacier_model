@@ -45,4 +45,4 @@ end
 
 % Convert to ice equivalent
 
-balh = balweh./0.91;
+balh = balweh./0.91; 
