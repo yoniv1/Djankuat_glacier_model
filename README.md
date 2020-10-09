@@ -58,9 +58,9 @@ The model structure consists of the following elemennts:
 
  c) Imposing a supraglacial debris cover (/loop_Flow_model/ and /loop_Debris_model/):
 
- After the steady state is reached, a supraglacial debris cover is imposed on
+ After the steady state is reached, a supraglacial debris cover is superimposed on
  the steady state glacier. For this aspect, the model uses the debris-related
- Variables in 'debris_variables.m' The model then updates the glacier geometry until
+ variables in 'debris_variables.m' The model then updates the glacier geometry until
  a new steady state is reached for both glacier geometry and the supraglacial
  debris cover.
 
