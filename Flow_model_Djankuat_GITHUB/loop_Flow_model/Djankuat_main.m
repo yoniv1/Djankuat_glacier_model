@@ -69,7 +69,7 @@ for j=1:jmax      % jmax
                         
       % Length (m)
       
-      leng=(nnz(th))*deltax;
+      leng=(nnz(th)+1)*deltax;
      
       % Area (km2)
       
