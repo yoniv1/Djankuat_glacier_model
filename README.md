@@ -137,5 +137,5 @@ Please cite the usage of the model as follows:
 
 Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: Modelling the evolution of Djankuat Glacier, North Caucasus, from 1752 until 2100 AD, The Cryosphere Discuss., https://doi.org/10.5194/tc-2019-312, in review, 2020.    
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3934612.svg)](https://doi.org/10.5281/zenodo.3934612)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3934612.svg)](https://doi.org/10.5281/zenodo.3934612) 
 
