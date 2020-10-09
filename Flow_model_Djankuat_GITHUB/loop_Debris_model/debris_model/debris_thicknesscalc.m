@@ -30,11 +30,11 @@ for i=2:xnum_d
 
 end
   
-% Calculate for terminus and first foreland point
+% Calculate for terminus point
 
-	if i == (leng./deltax_d) || i == ((leng./deltax_d)+1);
+	if i == (leng./deltax_d);
   	
-% Calcualte flux gradient on normal grid points
+    % Calcualte flux gradient on normal grid points
 
  	 term1_debris(i) = -((fl_debris(i)-fl_debris(i-1))/(deltax_d));
   
@@ -50,6 +50,28 @@ end
   
   	 h_debris(i) = h_debrisini(i) + deltat_d*(term1_debris(i) - term2_debris(i) + term3_debris(i));
 
+    end
+    
+% Calculate for first foreland point
+    
+    if i == ((leng./deltax_d)+1)
+        
+     % Calcualte flux gradient on normal grid points
+
+ 	 term1_debris(i) = 0;
+  
+   	 % Meltout of debris material from the ice
+  
+ 	 term2_debris(i) = 0;
+  
+ 	 % Terminus wasting
+  
+ 	 term3_debris(i) = inoutdebris(i);
+	  
+ 	 % Calculate new debris thickness
+  
+  	 h_debris(i) = h_debrisini(i) + deltat_d*(term1_debris(i) - term2_debris(i) + term3_debris(i));
+    
     end
 
   	% Debris thickness to 0 if negative
