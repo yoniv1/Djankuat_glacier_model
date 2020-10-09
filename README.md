@@ -67,22 +67,27 @@ The model structure consists of the following elemennts:
  d) Storage of data:
 
  The loop in the model stores the data related to glacier geometry (length, area,
- width, etc.) and supraglacial debris cover (mean thickness, thickness front, debris-
- covered area, etc).
+ width, etc.) and supraglacial debris cover (mean thickness, thickness front, debris-covered area, etc).
 
 ### Running and adjusting the model
 
- To run the model, unzip the data package and open the script MAIN.m to run the model code. 
+ To run the model, unzip the data package and open the script 'MAIN.m' to run the model code. 
 
  To adjust the model, adjust the parameters in the input files:
  
  a) geometric data:
 
  * wbed_data (/loop_Flow_model_debrisfree/, bed width, Eq. 1)
- * mu_data (/loop_Flow_model_debrisfree/, valley angles, Eq. 1)
+ * mu_data (/loop_Flow_model_debrisfree/, lateral valley angles, Eq. 1)
  * bed_data (/loop_Flow_model_debrisfree/, bedrock elevation, Eq. 1)
+ 
+ b) mass balance profile:
 
- b) variables related to the evolution of the supraglacial debris cover:
+ * ELA (/loop_Flow_model_debrisfree/, equilibrium line altitude, Eq. 3, 4, 16)
+ * beta1 (/loop_Flow_model_debrisfree/, mass balance gradient above ELA, Eq. 3, 4, 16)
+ * beta2 (/loop_Flow_model_debrisfree/, mass balance gradient below ELA, Eq. 3, 4, 16)
+
+ c) variables related to the evolution of the supraglacial debris cover:
 
  * hstar (debris_variables.m, decay of exponential ice melt-debris thickness function, Eq. 14)
  * inputlocation_debris (debris_variables.m, debris input location, Eq. 13)
@@ -96,7 +101,7 @@ The model structure consists of the following elemennts:
  * yearly_growthfactor_area_d_past (/loop_Debris_model/debris_model/Debris_cover_main/, growth factor debris area, Eq. 17)
  * debrisarea_d_past (/loop_Debris_model/debris_model/debris_areacalc/, distance front parameterization debris area, Eq. 15)
 
- c) numerical values:
+ d) numerical values:
 
  * numberofyears (MAIN.m, number of years to be considered in the ice flow-debris model after initial steady state)
 
