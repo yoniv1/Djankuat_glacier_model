@@ -2,9 +2,8 @@
 % This program is a simple 1D steady state debris-covered glacier model.
 % =====================================================================
 
-% Initialize debris on last glacier gridpoint and foreland deposition
+% Initialize debris for foreland deposition
 
-h_debris((leng./deltax_d)) = 0; %%
 h_debris((leng./deltax_d)+1) = 0; %%
 
 % --------------------------------------------------------------------
