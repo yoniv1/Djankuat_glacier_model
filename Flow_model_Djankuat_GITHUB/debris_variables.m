@@ -15,10 +15,10 @@ debris_ar_years = zeros(1,numberofyears);
 rho_debris = 2600;			          % Density of debris p_debris (kg m^-3)
 concentration_debris = 1.05;          % Englacial debris concentratin C_debris (kg m^-3)
 phi_debris = 0.43;                    % Porosity of debris material phi_debris (-)
-terminusflux_cst = 1.00;              % Manipulate flux into foreland to reach steady state
+terminusflux_cst = 0.50;              % Manipulate flux into foreland to reach steady state
 hstar = 1.15;                         % Characteristic debris thickness H*debris (m)
 inputlocation_debris = 168;           % Input location x_debris (grid point, m/deltax)
-depositionrate_debris = 0.25;         % Debris input flux F_debris (m yr-1)
+depositionrate_debris = 0.50;         % Debris input flux F_debris (m yr-1)
 load('glacier_surface_width.dat');    % Surface width at x_debris (m)
 wsfc_xinput_tdebris = glacier_surface_width(inputlocation_debris);   
 tdebris = 1;                          % Time of source release t_debris (y)
