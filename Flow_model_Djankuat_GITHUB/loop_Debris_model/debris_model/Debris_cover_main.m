@@ -2,8 +2,6 @@
 % This program is a simple 1D steady state debris-covered glacier model.
 % =====================================================================
 
-% Initialize debris for foreland deposition
-
 h_debris((leng./deltax_d)+1) = 0; %%
 
 % --------------------------------------------------------------------
@@ -99,13 +97,32 @@ fl_debris(1) = 0;
 h_debris(1) = 0;
 fl_debris(xnum_d+1) = 0;
 h_debris(xnum_d+1) = 0;
+   
+% Debris thickness
+
+for i=(1:xnum_d)
+  if i > leng./deltax_d+1
+      h_debris(i) = 0.0;
+      yearly_h_hist(time,i) = 0.0;
+  end
+end
 
 % ------------------------------------------------------------------
 % Store data debris thickness and area
 % ------------------------------------------------------------------
 
 yearly_height_debris(time,:) = yearly_h_hist(time,:);
+
+yearly_foreland_deposition_flux(time,1) = h_debris(((leng./deltax_d)+1));
+
+if time == 1
+yearly_foreland_deposition_acc(time,1) = yearly_foreland_deposition_flux(time,1);
+elseif time > 1
+yearly_foreland_deposition_acc(time,1) = yearly_foreland_deposition_acc(time-1,1) + yearly_foreland_deposition_flux(time,1);
+end
+
 yearly_fractarea_debris(time,:) = debrisarea_d_past(time,:);
+yearly_meltout_debris(time,:) = meltout_debris.*j_d;
 yearly_total_area_debris(time,1:leng/10) = yearly_fractarea_debris(time,1:leng/10).*yearly_wsfc(time,1:leng/10);
 yearly_totalglacier_area_debris(time,1) = sum(yearly_total_area_debris(time,:)./100000);
 yearly_fractglacier_area_debris(time,1) = yearly_totalglacier_area_debris(time,:)./area_years(:,time);
