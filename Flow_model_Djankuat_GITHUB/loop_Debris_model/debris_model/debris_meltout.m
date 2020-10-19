@@ -11,3 +11,9 @@ for i = 2:xnum_d
 end
 
 meltout_debris(1)=0;
+
+for i = 2:xnum_d
+	if i > ((leng./deltax_d)+1)
+        meltout_debris(i) = 0;
+    end
+end
