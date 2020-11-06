@@ -15,10 +15,10 @@ debris_ar_years = zeros(1,numberofyears);
 rho_debris = 2600;			          % Density of debris p_debris (kg m^-3)
 concentration_debris = 1.05;          % Englacial debris concentratin C_debris (kg m^-3)
 phi_debris = 0.43;                    % Porosity of debris material phi_debris (-)
-terminusflux_cst = 0.50;              % Manipulate flux into foreland to reach steady state
+terminusflux_cst = 0.5;               % Manipulate flux into foreland to reach steady state
 hstar = 1.15;                         % Characteristic debris thickness H*debris (m)
 inputlocation_debris = 168;           % Input location x_debris (grid point, m/deltax)
-depositionrate_debris = 0.48;         % Debris input flux F_debris (m yr-1)
+depositionrate_debris = 0.665;         % Debris input flux F_debris (m yr-1)
 load('glacier_surface_width.dat');    % Surface width at x_debris (m)
 wsfc_xinput_tdebris = glacier_surface_width(inputlocation_debris);   
 tdebris = 1;                          % Time of source release t_debris (y)
@@ -72,11 +72,17 @@ yearly_h_time = zeros(jdiag_d,xnum_d+1);
 
 % Initialize parameter values for debris
 
+yearly_inoutdebris_debris = zeros(numberofyears,no_gridpoints_d);
+yearly_flux_debris = zeros(numberofyears,no_gridpoints_d);
+yearly_flux_div_debris = zeros(numberofyears,no_gridpoints_d);
+yearly_meltout_debris = zeros(numberofyears,no_gridpoints_d);
 yearly_height_debris = zeros(numberofyears,no_gridpoints_d);
 yearly_fractarea_debris = zeros(numberofyears,no_gridpoints_d);
 yearly_total_area_debris = zeros(numberofyears,no_gridpoints_d);
 yearly_totalglacier_area_debris = zeros(numberofyears,1);
 yearly_fractglacier_area_debris = zeros(numberofyears,1);
+yearly_foreland_deposition_flux = zeros(numberofyears,1);
+yearly_foreland_deposition_acc = zeros(numberofyears,1);
 
 % Initialize growth factor for debris area change
 
