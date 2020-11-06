@@ -18,7 +18,7 @@ phi_debris = 0.43;                    % Porosity of debris material phi_debris (
 terminusflux_cst = 0.5;               % Manipulate flux into foreland to reach steady state
 hstar = 1.15;                         % Characteristic debris thickness H*debris (m)
 inputlocation_debris = 168;           % Input location x_debris (grid point, m/deltax)
-depositionrate_debris = 0.665;         % Debris input flux F_debris (m yr-1)
+depositionrate_debris = 0.48;         % Debris input flux F_debris (m yr-1)
 load('glacier_surface_width.dat');    % Surface width at x_debris (m)
 wsfc_xinput_tdebris = glacier_surface_width(inputlocation_debris);   
 tdebris = 1;                          % Time of source release t_debris (y)
