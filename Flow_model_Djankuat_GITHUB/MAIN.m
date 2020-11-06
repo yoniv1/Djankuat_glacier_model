@@ -32,7 +32,7 @@ dlmwrite('glacier_surface_elevation.dat',sur)
 
 % Start for loop with debris: insert number of years to be considered
 
-numberofyears = 400;
+numberofyears = 350;
 
 % Define variables for the debris model
 
@@ -81,4 +81,3 @@ flow_plot_output;
 debris_plot_output;
 
 toc
-
