@@ -135,4 +135,4 @@ Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: Modelling the evo
 
 Please cite the usage of the model as follows:
 
-Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: A 1D coupled ice flow-supraglacial debris cover model for the Djankuat Glacier, The Cryosphere, https://doi.org/10.5281/zenodo.3934612, 2020.    
+Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: A 1D coupled ice flow-supraglacial debris cover model for the Djankuat Glacier, The Cryosphere, https://doi.org/10.5281/zenodo.4075093, 2020.    
