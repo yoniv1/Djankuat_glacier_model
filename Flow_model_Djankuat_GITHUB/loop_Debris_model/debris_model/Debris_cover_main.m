@@ -102,7 +102,7 @@ h_debris(xnum_d+1) = 0;
 
 if stop_d == 1
     for i=(1:size(th,1))
-     if th(i) == 0 ~= (leng./deltax)+1
+     if th(i) == 0 && i ~= (leng./deltax)+1
          h_debris(i) = 0.0;
          yearly_h_hist(time,i) = 0.0;
      end
