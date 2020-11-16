@@ -129,10 +129,10 @@ The model structure consists of the following elemennts:
 
 Anderson, L. S. and Anderson, R. S.: Modeling debris-covered glaciers: response to steady debris deposition, The Cryosphere, 10, 1105–1124, https://doi.org/10.5194/tc-10-1105-2016, 2016.
 
-Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: Modelling the evolution of Djankuat Glacier, North Caucasus, from 1752 until 2100 AD, The Cryosphere, https://doi.org/10.5194/tc-2019-312, 2020.
+Verhaegen, Y., Huybrechts, P., Rybak, O., and Popovnin, V. V.: Modelling the evolution of Djankuat Glacier, North Caucasus, from 1752 until 2100 CE, The Cryosphere, 14, 4039–4061, https://doi.org/10.5194/tc-14-4039-2020, 2020.
 
 ### Citation
 
 Please cite the usage of the model as follows:
 
-Verhaegen, Y. and Huybrechts, P.: A 1D coupled ice flow-supraglacial debris cover model for the Djankuat Glacier, https://doi.org/10.5281/zenodo.4075093, 2020.    
+Verhaegen, Y. and Huybrechts, P.: A 1D coupled ice flowsupraglacial debris cover model for the Djankuat Glacier, Zenodo, https://doi.org/10.5281/zenodo.4075093, 2020.
