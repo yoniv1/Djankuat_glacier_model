@@ -2,7 +2,7 @@
 % Determine the debris advective flux.
 % --------------------------------------------------------------------
 
-for i = inputlocation_debris:xnum_d
+for i = nelh:xnum_d
         
   % Initialize debris flux 
     
