@@ -2,8 +2,13 @@
 % Determine the debris advective flux.
 % --------------------------------------------------------------------
 
-for i = inputlocation_debris:xnum_d
-        
+if nelh > inputlocation_debris
+    flux_loop = inputlocation_debris;
+elseif nelh < inputlocation_debris
+    flux_loop = nelh;
+end
+
+for i = flux_loop:xnum_d        
   % Initialize debris flux 
     
   fl_debris(i)=0.0;
